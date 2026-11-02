@@ -70,6 +70,7 @@ Hooks are the same idea at load time: `@Inject` mixins generated into the mod's 
 | --- | --- |
 | `gocraft` | The Fabric mod, go.jar and the integration test. |
 | `gocraft-sdk` | The Go SDK. |
-| `gocraft-example` | A complete example mod. |
+| `gocraft-example` | A tour of the SDK, as a mod. |
+| `gostats` | A small complete mod with unit tests and an in-game self-test. |
 | `gocraft-docs` | This manual. |
 | `gocraft-webdocs` | The site generator for this manual. |

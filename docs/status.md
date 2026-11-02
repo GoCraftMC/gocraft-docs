@@ -1,6 +1,6 @@
 # Status
 
-GoCraft is at version 0.1, and its API may still change.
+GoCraft is at version 0.1, a [pre-release](https://github.com/GoCraftMC/gocraft/releases), and its API may still change.
 
 ## Tested
 
@@ -22,6 +22,7 @@ Also seen working on Linux x86-64:
 - Downloading and checking a Go toolchain, cross-compiling with a downloaded Zig, incremental builds, the build
   cache, custom tasks and continuous builds.
 - Typed bindings for several thousand classes, which compile and pass `go vet`.
+- A new project built from the released `go.jar`, mod jar and SDK, which loads in a real server.
 
 ## Not yet tested
 
@@ -38,8 +39,7 @@ Also seen working on Linux x86-64:
 
 ## Not done yet
 
-- Publishing to Modrinth and CurseForge, and to Maven. There are no release downloads of `go.jar` or the mod jar
-  yet, so build them from the `gocraft` repo.
+- Publishing to Modrinth and CurseForge, and to Maven. Releases are on GitHub only.
 - Plugins and scripting in go.jar, and multi-project builds.
 - Per-instance Go state on `jvm.Extend` classes, which block entities will want.
 - Friendly SDK packages for networking, rendering, screens, entities and data generation. All of these are already

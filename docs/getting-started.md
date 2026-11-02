@@ -5,16 +5,16 @@ and if you have no C compiler, which Go's native library mode requires, it downl
 
 ## Create a project
 
-Build `go.jar` and the mod jar from the [gocraft repo](https://github.com/GoCraftMC/gocraft), as there are no
-release downloads yet. Then run `go.jar` in an empty directory:
+Download `go.jar` and `gocraft-0.1.0.jar` from the [GoCraft releases](https://github.com/GoCraftMC/gocraft/releases). Then run `go.jar` in an empty
+directory:
 
 ```sh
 mkdir mymod && cd mymod
 java -jar /path/to/go.jar init mymod
 ```
 
-This creates the project, plus `gow` and `gow.bat`, which you use from now on. Put the GoCraft mod jar
-at `libs/gocraft.jar`, then fetch the SDK and build:
+This creates the project, plus `gow` and `gow.bat`, which you use from now on. Copy `gocraft-0.1.0.jar`
+to `libs/gocraft.jar`, then fetch the SDK and build:
 
 ```sh
 ./gow tidy
@@ -67,7 +67,8 @@ Give it a name in `src/main/resources/assets/mymod/lang/en_us.json`:
 ```
 
 Run `./gow runClient` again and type `/give @s mymod:ruby`. Assets work exactly as in any other mod;
-[gocraft-example](https://github.com/GoCraftMC/gocraft-example) has a complete item and block.
+[gocraft-example](https://github.com/GoCraftMC/gocraft-example) has a complete item and block, and
+[gostats](https://github.com/GoCraftMC/gostats) is a small but complete mod with its own tests.
 
 ## Install a mod
 
