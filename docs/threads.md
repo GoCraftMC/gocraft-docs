@@ -43,6 +43,15 @@ writes, cannot be recovered by anything and also end the process.
 
 `os.Exit`, `log.Fatal` and the like end the game. Use them as you would in a library, which is to say never.
 
+## Go mods are not sandboxed
+
+A Go mod has the same access to the player's computer as the game itself: it can read and change files, use the
+network and start programs. GoCraft does not restrict any of this, and cannot from inside the process, because
+native code can always make system calls directly. Java mods are no different.
+
+GoCraft tells players this in the log on every launch, and on the title screen when the set of installed Go mods
+changes. If your mod opens a port, uploads anything or touches files outside its own folders, say so on its page.
+
 ## Cgo and signals
 
 Go and the JVM cooperate on signal handling, and many Go runtimes can share the process (see
