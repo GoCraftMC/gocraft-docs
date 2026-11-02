@@ -5,7 +5,8 @@ and if you have no C compiler, which Go's native library mode requires, it downl
 
 ## Create a project
 
-Get `go.jar` from the GoCraft releases and run it in an empty directory:
+Build `go.jar` and the mod jar from the [gocraft repo](https://github.com/GoCraftMC/gocraft), as there are no
+release downloads yet. Then run `go.jar` in an empty directory:
 
 ```sh
 mkdir mymod && cd mymod

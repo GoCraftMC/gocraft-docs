@@ -34,6 +34,10 @@ func init() {
 
 To link only some packages, list them under `entrypoints` in [gomod.json](gomod-json.md).
 
+Packages named `internal` are not imported directly, because Go forbids it from outside their parent; the
+packages that use them link them anyway. Every linked package has to build on every target, so import
+platform-specific code from a package that builds everywhere.
+
 ## The client split
 
 Everything compiles into a single native library, so client packages are present on a dedicated server
