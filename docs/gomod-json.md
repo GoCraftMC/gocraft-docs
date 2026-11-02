@@ -11,7 +11,7 @@ GoCraft converts it into one when the mod loads, so these fields mean exactly wh
   "description": "What it does.",
   "authors": ["You"],
   "contact": { "homepage": "https://example.com" },
-  "license": "BSD-4-Clause",
+  "license": "BSD-3-Clause",
   "icon": "assets/mymod/icon.png",
   "environment": "*",
   "depends": { "minecraft": ">=26.3", "gocraft": "*" }
